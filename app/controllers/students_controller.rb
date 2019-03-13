@@ -12,10 +12,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-    fail
     @student = Student.create(first_name: params[:first_name], last_name: params[:last_name])
-    redirect_to new_student_path
-    puts params.inspect
+    redirect_to student_path(@student)
   end 
 
 end
