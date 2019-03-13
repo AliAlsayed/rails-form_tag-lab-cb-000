@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     render :new
-    puts params
+    puts params[:first_name]
   end 
 
 end
