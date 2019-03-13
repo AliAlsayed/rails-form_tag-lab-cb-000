@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     puts params
-    redirect_to new
+    redirect_to :new
   end 
 
 end
