@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    render 'new'
+    redirect_to new_student_path
     puts params[:first_name]
   end 
 
