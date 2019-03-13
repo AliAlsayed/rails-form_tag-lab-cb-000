@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     fail
-    @student = Student.create()
+    @student = Student.create(first_name: params[:first_name], last_name: params[:last_name])
     redirect_to new_student_path
     puts params.inspect
   end 
