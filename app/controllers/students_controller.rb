@@ -12,8 +12,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-    puts params
     render :new
+    puts params
   end 
 
 end
