@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
   def create
     redirect_to new_student_path
-    puts params[:first_name]
+    puts params.inspect
   end 
 
 end
